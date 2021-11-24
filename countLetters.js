@@ -3,17 +3,19 @@ const countLetters = function(str) {
   let letters = str.split(" ").join("");
   let container = {
   };
-    for(letter of letters){
-      let addLetter = function() {
-        let num = 1;
-        if (container[`${letter}`]){
-          container[`${letter}`] ++;
-        } else {
-          container[`${letter}`] = num;
-        }      
-      };
+  for (let letter of letters) {
+    let addLetter = function() {
+      let num = 1;
+      if (container[`${letter}`]) {
+        container[`${letter}`] ++;
+      } else {
+        container[`${letter}`] = num;
+      }
+    };
      
-      addLetter(letter);
-    }
-  return container
+    addLetter(letter);
+  }
+  return container;
 };
+
+console.log(countLetters("Tell me how to feel"));
