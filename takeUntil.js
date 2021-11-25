@@ -1,7 +1,7 @@
 const takeUntil = function (array, callback) {
   let newArr = []; 
 
-  for(element of array){
+  for(let element of array){
     if(callback(element)){
       return newArr
     } else {
@@ -9,6 +9,12 @@ const takeUntil = function (array, callback) {
     }
   }
 return newArr
+}
+
+let cool = "hello"
+
+for(let letter of cool){
+  console.log(letter)
 }
 
   
