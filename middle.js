@@ -39,3 +39,5 @@ const middle = function(arr) {
 
 console.log(middle([5,10]));
 console.log(assertArraysEqual(middle([5]), []))
+
+console.log(module)
