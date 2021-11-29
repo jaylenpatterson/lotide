@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ ${actual} Assertion Passes!`);
-  } else {
-    console.log(`🛑🛑🛑 ${actual} Assertion Failed`);
-  }
-};
-
 let eqArrays = function(arr1, arr2) {
   let falseCount = 0;
   //Checks if there are any indexes wehre arr1 != arr2. If there is false count increases
@@ -22,6 +14,4 @@ let eqArrays = function(arr1, arr2) {
   }
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]),true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+module.exports = eqArrays;
