@@ -6,8 +6,9 @@ const map = function (arr, callback ) {
   return newArr;
 }
 
-const words = ["ground", "control", "to", "major", "tom"];
+console.log(map([1,2,3,4], x => x + 1 ));
 
+module.exports = map;
 
 
 

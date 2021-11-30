@@ -1,4 +1,3 @@
-
 const countLetters = function(str) {
   let letters = str.split(" ").join("");
   let container = {
@@ -18,4 +17,5 @@ const countLetters = function(str) {
   return container;
 };
 
-console.log(countLetters("Tell me how to feel"));
+module.exports = countLetters;
+

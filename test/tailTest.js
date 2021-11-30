@@ -1,7 +1,12 @@
-const assertEqual = require('../assertEqual');
-const tail = require('../tail')
+const assert = require('chai').assert;
+const tail = require('../tail');
 
-let nums = [1, 2, 3, 4, 5];
-console.log(tail(nums))  //return value
-console.log(assertEqual(nums.length, 5)) // dosent modify original array
-console.log(assertEqual(tail(nums).length, 4)) // checks that the function returns an array with 1 less value than it had originally
+describe("#tail", () => {
+  it("should return [2,3]", () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
+
+  it("should return [1]", () => {
+    assert.deepEqual(tail([225, 1]), [1]);
+  });
+});

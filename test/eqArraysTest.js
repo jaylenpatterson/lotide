@@ -1,7 +1,22 @@
-const assertEqual = require('../assertEqual');
 const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
 
-// checks if both arrays are either true or false
-console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
-console.log(assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true));
-console.log(assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false));
+describe("#eqArrays()", () => {
+  it("should return true", () => {
+    let actual = [22, 38, 10, 24];
+    let expected = [22, 38, 10, 24];
+    assert.strictEqual(eqArrays(actual, expected), true);
+  });
+  
+  it("should return false", () => {
+    let actual = [22, 38, 20];
+    let expected = [22, 38, 10, 24];
+    assert.strictEqual(eqArrays(actual, expected), false);
+
+    it("should return false", () => {
+      let actual = [];
+      let expected = [22, 38, 10, 24];
+      assert.strictEqual(eqArrays(actual, expected), false);
+    });
+  }); 
+});
