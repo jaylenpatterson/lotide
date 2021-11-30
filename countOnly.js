@@ -1,3 +1,4 @@
+//loops through an array of true names and false names, returns a object that stores the amount of times each true name appears in the array
 const countOnly = function(arr, obj) {
   let container = {
   };
