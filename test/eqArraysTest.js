@@ -7,7 +7,11 @@ describe("#eqArrays()", () => {
     let expected = [22, 38, 10, 24];
     assert.strictEqual(eqArrays(actual, expected), true);
   });
-  
+  it("should return true", () => {
+    let actual = ["apples", 387, "pears", 24];
+    let expected = ["apples", 387, "pears", 24];
+    assert.strictEqual(eqArrays(actual, expected), true);
+  });
   it("should return false", () => {
     let actual = [22, 38, 20];
     let expected = [22, 38, 10, 24];
@@ -18,5 +22,5 @@ describe("#eqArrays()", () => {
       let expected = [22, 38, 10, 24];
       assert.strictEqual(eqArrays(actual, expected), false);
     });
-  }); 
+  });
 });

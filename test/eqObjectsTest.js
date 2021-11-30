@@ -19,7 +19,7 @@ describe("#eqObjects()", () => {
   });
 
   it("should return false", () => {
-    assert.deepEqual(eqObjects({ a: 18, c: 78, c: 4 }, { a: 1, b: 7, c: 44 }), false);
+    assert.deepEqual(eqObjects({ a: 18, c: 78, P: 4 }, { a: 1, b: 7, c: 44 }), false);
   });
 
 });

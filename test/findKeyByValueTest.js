@@ -16,6 +16,14 @@ describe("#findKeyByValue()", () => {
     assert.deepEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
   });
 
+  it("should return sci_fi", () => {
+    assert.deepEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
+  });
+
+  it("should return undefined", () => {
+    assert.deepEqual(findKeyByValue(bestTVShowsByGenre, "The Simpsons"), undefined);
+  });
+
 });
 
 
