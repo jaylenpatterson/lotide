@@ -1,8 +1,9 @@
+//If array's length is even returns the two middle numbers, otherwise returns the middle number of the array
 const middle = function(arr) {
   let middleNums = [arr[((arr.length / 2)) - 1], arr[(arr.length / 2)]];
   let middleNum = [arr[Math.floor(arr.length / 2)]];
   let newArr = [];
-  if(arr.length <= 2){
+  if (arr.length <= 2) {
     return newArr;
   } else if (arr.length % 2 === 0) {
     newArr = middleNums;
@@ -11,6 +12,5 @@ const middle = function(arr) {
   }
   return newArr;
 };
-
 
 module.exports = middle;

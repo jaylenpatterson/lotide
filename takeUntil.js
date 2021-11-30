@@ -1,14 +1,15 @@
-const takeUntil = function (array, callback) {
-  let newArr = []; 
-  for(let element of array){
-    if(callback(element)){
-      return newArr
+//removes a section of the array until the callback function finds the cut off point
+const takeUntil = function(array, callback) {
+  let newArr = [];
+  for (let element of array) {
+    if (callback(element)) {
+      return newArr;
     } else {
-      newArr.push(element)
+      newArr.push(element);
     }
   }
-return newArr
-}
+  return newArr;
+};
 
 module.exports = takeUntil;
 

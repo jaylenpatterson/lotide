@@ -13,4 +13,11 @@ describe("#takeUntil()", () => {
   it(`should return [7, 10, 6, 5]`, () => {
     assert.deepEqual(takeUntil([7, 10, 6, 5, 3, 88, 47 ,30], x => x === 3), [7, 10, 6, 5]);
   });
+
+  it(`should return [7, 10, 6, 57, 10]`, () => {
+    assert.deepEqual(takeUntil([7, 10, 6, 57, 10, "", 6, 5], x => x === ""), [7, 10, 6, 57, 10]);
+  });
+  it(`should return [7, 10, 6, 57, 10, "", 6, 5]`, () => {
+    assert.deepEqual(takeUntil([7, 10, 6, 57, 10, "", 6, 5], x => x === 2000), [7, 10, 6, 57, 10, "", 6, 5]);
+  });
 });

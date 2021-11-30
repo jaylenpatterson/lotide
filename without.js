@@ -1,3 +1,5 @@
+// removes all items from source that are in the remove array then returns a new array.
+
 const without = function(source, remove) {
   let answer = source;
   for (let i = 0; i < source.length; i++) {
@@ -10,5 +12,5 @@ const without = function(source, remove) {
   return answer;
 };
 
-module.exports = without
+module.exports = without;
 

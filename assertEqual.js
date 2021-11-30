@@ -1,4 +1,5 @@
-const assertEqual = function (actual, expected) {
+//Compares two results. If result one is equal to result two assertion passes! Otherwise assertion fails.
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return `✅✅✅ ${actual} Assertion Passes!`;
   } else {
