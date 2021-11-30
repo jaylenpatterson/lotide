@@ -1,3 +1,5 @@
+//adds each letter that appears in the string to an object. If an letter shows up more than once the object tracks how many more times it appears
+
 const countLetters = function(str) {
   let letters = str.split(" ").join("");
   let container = {
