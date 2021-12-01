@@ -1,5 +1,5 @@
 //removes a section of the array until the callback function finds the cut off point
-const takeUntil = function(array, callback) {
+const takeUntil = function(arr, callback) {
   let newArr = [];
   for (let element of array) {
     if (callback(element)) {
