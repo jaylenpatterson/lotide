@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jaylenpatterson/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A remake of lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/jaylenpatterson/lotide.git"
   },
-  "author": "",
+  "author": "Jaylen Patterson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jaylenpatterson/lotide/issues"
