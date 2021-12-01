@@ -1,5 +1,5 @@
 // loops through an array, returns an object that contains each letter in the array and all of its index positions for every instance of that letter
-const letterPositions = function(sentence) {
+const letterPositions = function(str) {
   let letters = sentence;
   const results = {
   };

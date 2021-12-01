@@ -1,3 +1,4 @@
+// Finds the key of an object by inputting the value that corresponds to that key.
 const assert = require('chai').assert;
 const findKeyByValue = require('../findKeyByValue');
 
